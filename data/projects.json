@@ -4,7 +4,6 @@
         "title": "Project One: How does hardware work?",
         "description": "In this project, my team and I constructed basic logic gates using transistors and other electronic components.",
         "fullDescription": "In this project, my team and I constructed and tested three fundamental logic gates—NOT, AND, and OR—using a solderless breadboard and a kit of discrete components including PN2222 NPN transistors, various resistors, and pushbuttons. To understand the circuit design, we first did some research and watched explanatory videos. We then applied this knowledge to build the circuits sequentially, starting with the simpler NOT gate before assembling the more complex OR and AND gates, utilizing LEDs to visually verify the correct logic output for each configuration.",
-        "icon": "🎯",
         "image": "assets/images/project1.jpg",
         "status": "completed",
         "videoUrl": "https://www.youtube.com/embed/E_j6BvmugZY"
