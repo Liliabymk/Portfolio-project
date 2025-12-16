@@ -27,6 +27,7 @@ async function loadProjects() {
 function createProjectCard(project) {
     const card = document.createElement('div');
     card.className = 'project-card';
+    card.style.cursor = 'pointer';
     
     let tagsHTML = '';
     if (project.tags && project.tags.length > 0) {
@@ -35,24 +36,26 @@ function createProjectCard(project) {
             '</div>';
     }
     
-    let linksHTML = '<div class="project-links">';
-    if (project.github) {
-        linksHTML += `<a href="${project.github}" target="_blank">GitHub</a>`;
+    let statusLabel = '';
+    if (project.status === 'coming-soon') {
+        statusLabel = '<div class="status-label">Coming Soon</div>';
     }
-    if (project.demo) {
-        linksHTML += `<a href="${project.demo}" target="_blank">Live Demo</a>`;
-    }
-    linksHTML += '</div>';
     
     card.innerHTML = `
         <div class="project-image">${project.icon || '📁'}</div>
         <div class="project-content">
+            ${statusLabel}
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             ${tagsHTML}
-            ${linksHTML}
+            <div class="view-project-btn">View Project</div>
         </div>
     `;
+    
+    // Make entire card clickable
+    card.addEventListener('click', function() {
+        window.location.href = `project-detail.html?id=${project.id}`;
+    });
     
     return card;
 }
