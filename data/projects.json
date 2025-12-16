@@ -1,13 +1,12 @@
 [
     {
         "id": 1,
-        "title": "Project One",
-        "description": "Brief description of your first project. Explain what it does and what technologies you used.",
-        "fullDescription": "Write a more detailed description of your project here. Explain the problem it solves, the technologies used, and key features.",
+        "title": "Project One: How does hardware work?",
+        "description": "In this project, my team and I constructed basic logic gates using transistors and other electronic components.",
+        "fullDescription": "In this project, my team and I constructed and tested three fundamental logic gates—NOT, AND, and OR—using a solderless breadboard and a kit of discrete components including PN2222 NPN transistors, various resistors, and pushbuttons. To understand the circuit design, we first did some research and watched explanatory videos. We then applied this knowledge to build the circuits sequentially, starting with the simpler NOT gate before assembling the more complex AND and OR gates, utilizing LEDs to visually verify the correct logic output for each configuration.",
         "icon": "🎯",
-        "tags": ["HTML", "CSS", "JavaScript"],
         "status": "completed",
-        "videoUrl": "https://www.youtube.com/embed/VIDEO_ID"
+        "videoUrl": "https://youtu.be/E_j6BvmugZY?si=QeWQ3ZLdowItaKIq"
     },
     {
         "id": 2,
