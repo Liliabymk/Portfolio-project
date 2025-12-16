@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <h1>My Projects</h1>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically loaded here from projects.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="https://github.com/yourusername" class="social-icon" title="GitHub">
+                    <img src="assets/icons/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.codecademy.com/profiles/yourusername" class="social-icon" title="Codecademy">
+                    <img src="assets/icons/codecademy.svg" alt="Codecademy">
+                </a>
+            </div>
+            <p>&copy; 2025 My Portfolio. <a href="https://github.com/yourusername/portfolio-project">View on GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="js/navigation.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

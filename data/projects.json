@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Project One",
+        "description": "Brief description of your first project. Explain what it does and what technologies you used.",
+        "icon": "🎯",
+        "tags": ["HTML", "CSS", "JavaScript"],
+        "github": "https://github.com/yourusername/project-one",
+        "demo": "https://yourusername.github.io/project-one"
+    },
+    {
+        "id": 2,
+        "title": "Project Two",
+        "description": "Brief description of your second project. Highlight the key features and your role in creating it.",
+        "icon": "🎨",
+        "tags": ["React", "CSS", "API"],
+        "github": "https://github.com/yourusername/project-two",
+        "demo": "https://yourusername.github.io/project-two"
+    },
+    {
+        "id": 3,
+        "title": "Project Three",
+        "description": "Brief description of your third project. What problem did it solve? What did you learn?",
+        "icon": "🚀",
+        "tags": ["JavaScript", "Node.js", "Database"],
+        "github": "https://github.com/yourusername/project-three",
+        "demo": "https://yourusername.github.io/project-three"
+    }
+]
