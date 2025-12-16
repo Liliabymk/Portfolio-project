@@ -41,8 +41,12 @@ function createProjectCard(project) {
         statusLabel = '<div class="status-label">Coming Soon</div>';
     }
     
+    const imageHTML = project.image
+        ? `<img src="${project.image}" alt="${project.title}">`
+        : (project.icon || '📁');
+
     card.innerHTML = `
-        <div class="project-image">${project.icon || '📁'}</div>
+        <div class="project-image">${imageHTML}</div>
         <div class="project-content">
             ${statusLabel}
             <h3>${project.title}</h3>
