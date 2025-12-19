@@ -4,19 +4,24 @@
         "title": "Project One: How does hardware work?",
         "description": "In this project, my team and I constructed basic logic gates using transistors and other electronic components.",
         "fullDescription": "In this project, my team and I constructed and tested three fundamental logic gates—NOT, AND, and OR—using a solderless breadboard and a kit of discrete components including PN2222 NPN transistors, various resistors, and pushbuttons. To understand the circuit design, we first did some research and watched explanatory videos. We then applied this knowledge to build the circuits sequentially, starting with the simpler NOT gate before assembling the more complex OR and AND gates, utilizing LEDs to visually verify the correct logic output for each configuration.",
+        "cardImage": "assets/images/project1-card.jpg",
         "image": "assets/images/project1.jpg",
         "status": "completed",
-        "videoUrl": "https://www.youtube.com/embed/E_j6BvmugZY"
+        "videoUrl": "https://www.youtube.com/embed/E_j6BvmugZY",
+        "videoUrl2": "https://www.youtube.com/embed/K3gZlV5ObkE",
+        "videoUrl3": "https://www.youtube.com/embed/vKR5APSiiIE"
     },
     {
         "id": 2,
-        "title": "Project Two",
-        "description": "Exciting project coming soon!",
-        "fullDescription": "This project is currently in development. Check back soon for more details!",
-        "icon": "🎨",
-        "image": "assets/images/project2.svg",
-        "status": "coming-soon",
-        "videoUrl": ""
+        "title": "Project Two: Hour of Code",
+        "description": "In this project, my team and I visited a secondary school and taught fundamental algorithms and computer science concepts to students.",
+        "fullDescription": "As part of the 2025 Hour of AI global initiative, my team and I did this project to bridge the digital divide by teaching fundamental algorithms and computer science concepts to students at Secondary School No. 27. Our goal was to demystify artificial intelligence and programming for a group with limited access to such technology. Using Microsoft MakeCode, we designed and delivered an engaging, hands-on workshop tailored to our audience’s needs. Beyond the technical instruction, I played a key role in curriculum delivery and content creation, culminating in a recap documentary that highlighted our community's progress and celebrated their achievement with official certificates of completion.",
+        "cardImage": "assets/images/project2-card.jpg",
+        "image": "assets/images/project2.jpg",
+        "status": "completed",
+        "videoUrl": "",
+        "videoUrl2": "",
+        "videoUrl3": ""
     },
     {
         "id": 3,
@@ -24,8 +29,11 @@
         "description": "Another amazing project coming soon!",
         "fullDescription": "This project is in the planning stages. Stay tuned for updates!",
         "icon": "🚀",
-        "image": "assets/images/project3.svg",
+        "cardImage": "assets/images/project3-card.jpg",
+        "image": "assets/images/project3.jpg",
         "status": "coming-soon",
-        "videoUrl": ""
+        "videoUrl": "",
+        "videoUrl2": "",
+        "videoUrl3": ""
     }
 ]

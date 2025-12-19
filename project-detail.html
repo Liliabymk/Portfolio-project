@@ -202,11 +202,27 @@
                 <!-- Project tags and status will be inserted here -->
             </div>
 
-            <!-- Video Section -->
+            <!-- Video Section 1 -->
             <div class="video-container" id="videoSection">
-                <h2>How does hardware work?</h2>
+                <h2>Project Demo</h2>
                 <div id="videoContent" class="no-video">
                     <p>No video available for this project yet.</p>
+                </div>
+            </div>
+
+            <!-- Video Section 2 -->
+            <div class="video-container" id="videoSection2" style="display: none;">
+                <h2>Additional Content</h2>
+                <div id="videoContent2" class="no-video">
+                    <p>No video available for this section yet.</p>
+                </div>
+            </div>
+
+            <!-- Video Section 3 -->
+            <div class="video-container" id="videoSection3" style="display: none;">
+                <h2>Additional Content</h2>
+                <div id="videoContent3" class="no-video">
+                    <p>No video available for this section yet.</p>
                 </div>
             </div>
 
@@ -290,6 +306,26 @@
                 const videoContent = document.getElementById('videoContent');
                 if (project.videoUrl && project.videoUrl.trim()) {
                     videoContent.innerHTML = `<div class="video-wrapper"><iframe src="${project.videoUrl}" allowfullscreen></iframe></div>`;
+                }
+
+                // Update video section 2
+                const videoSection2 = document.getElementById('videoSection2');
+                const videoContent2 = document.getElementById('videoContent2');
+                if (project.videoUrl2 && project.videoUrl2.trim()) {
+                    videoContent2.innerHTML = `<div class="video-wrapper"><iframe src="${project.videoUrl2}" allowfullscreen></iframe></div>`;
+                    videoSection2.style.display = 'block';
+                } else {
+                    videoSection2.style.display = 'none';
+                }
+
+                // Update video section 3
+                const videoSection3 = document.getElementById('videoSection3');
+                const videoContent3 = document.getElementById('videoContent3');
+                if (project.videoUrl3 && project.videoUrl3.trim()) {
+                    videoContent3.innerHTML = `<div class="video-wrapper"><iframe src="${project.videoUrl3}" allowfullscreen></iframe></div>`;
+                    videoSection3.style.display = 'block';
+                } else {
+                    videoSection3.style.display = 'none';
                 }
 
                 // Update description
