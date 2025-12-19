@@ -20,12 +20,23 @@
         top: 70px;
         left: 0;
         width: 100%;
-        background-color: var(--white);
+        background-color: var(--primary-color);
         flex-direction: column;
         padding: 1rem;
         gap: 1rem;
         box-shadow: var(--shadow);
         z-index: 200;
+    }
+
+    /* Make links readable on the dark mobile panel */
+    .nav-menu.active .nav-link {
+        color: var(--text-light);
+        padding: 0.6rem 0.75rem;
+        display: block;
+    }
+
+    .nav-menu.active .nav-link:hover {
+        color: var(--accent-color);
     }
 
     /* Home Section */
