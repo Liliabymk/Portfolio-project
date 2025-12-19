@@ -71,6 +71,22 @@
             margin-bottom: 1rem;
         }
 
+        /* Large project image shown on detail page */
+        #projectImageContainer {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 1.5rem auto;
+            text-align: center;
+        }
+
+        #projectImageContainer img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            object-fit: cover;
+        }
+
         .video-wrapper {
             position: relative;
             width: 100%;
@@ -179,6 +195,7 @@
         <div class="project-detail-container">
             <a href="projects.html" class="back-btn">← Back to Projects</a>
             
+            <div id="projectImageContainer"></div>
             <h1 id="projectTitle">Loading...</h1>
             
             <div class="project-meta" id="projectMeta">
@@ -248,6 +265,14 @@
 
                 // Update title
                 document.getElementById('projectTitle').textContent = project.title;
+
+                // Show project image if available
+                const imgContainer = document.getElementById('projectImageContainer');
+                if (project.image && project.image.trim()) {
+                    imgContainer.innerHTML = `<img src="${project.image}" alt="${project.title}">`;
+                } else {
+                    imgContainer.innerHTML = '';
+                }
 
                 // Update meta (tags and status)
                 let metaHTML = '';
