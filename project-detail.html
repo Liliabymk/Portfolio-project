@@ -20,14 +20,14 @@
         .back-btn {
             display: inline-block;
             margin-bottom: 2rem;
-            color: var(--primary-color);
+            color: var(--secondary-color);
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s ease;
         }
 
         .back-btn:hover {
-            color: var(--secondary-color);
+            color: var(--tertiary-color);
         }
 
         .project-detail h1 {
@@ -67,7 +67,7 @@
         }
 
         .video-container h2 {
-            color: var(--primary-color);
+            color: var(--tertiary-color);
             margin-bottom: 1rem;
         }
 
@@ -90,28 +90,34 @@
         }
 
         .no-video {
-            background-color: var(--white);
+            background-color: var(--light-bg);
             padding: 2rem;
             text-align: center;
-            color: #666;
+            color: var(--text-color);
             border-radius: 8px;
         }
 
         .description {
-            background-color: var(--white);
+            background-color: var(--card-bg);
             padding: 2rem;
             border-radius: 8px;
             margin: 2rem 0;
             line-height: 1.8;
+            border-left: 5px solid var(--secondary-color);
         }
 
         .description h2 {
-            color: var(--primary-color);
+            color: var(--tertiary-color);
             margin-bottom: 1rem;
         }
 
+        #projectDescription {
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
         .coming-soon-message {
-            background-color: #fffbea;
+            background-color: #FFF9E6;
             border-left: 4px solid var(--secondary-color);
             padding: 1.5rem;
             border-radius: 4px;
@@ -121,6 +127,10 @@
         .coming-soon-message h3 {
             color: var(--secondary-color);
             margin-bottom: 0.5rem;
+        }
+
+        .coming-soon-message p {
+            color: var(--text-color);
         }
 
         @media (max-width: 768px) {
@@ -150,7 +160,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Lilia Bayat Makoo's Portfolio</div>
+            <div class="logo">My Portfolio</div>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>

@@ -9,12 +9,15 @@
 }
 
 :root {
-    --primary-color: #450693;
-    --secondary-color: #450693;
-    --text-color: #F5AD18;
-    --light-bg: #4E56C0;
-    --white: #FFF58A;
-    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --primary-color: #000B58;        /* Deep navy - primary brand color */
+    --secondary-color: #006A67;      /* Teal - accents and highlights */
+    --tertiary-color: #003161;       /* Navy accent - for text and borders */
+    --accent-color: #FDEB9E;         /* Cream/yellow - highlights and CTAs */
+    --text-color: #000B58;           /* Deep navy for main text */
+    --text-light: #FDEB9E;           /* Cream for text on dark backgrounds */
+    --light-bg: #F5F5F5;             /* Off-white background */
+    --card-bg: #FFFFFF;              /* White for cards */
+    --shadow: 0 2px 10px rgba(0, 11, 88, 0.15);  /* Navy-tinted shadow */
 }
 
 html {
@@ -25,7 +28,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--white);
+    background-color: var(--light-bg);
 }
 
 /* ===========================
@@ -33,7 +36,7 @@ body {
    =========================== */
 
 .navbar {
-    background-color: var(--white);
+    background-color: var(--primary-color);
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
@@ -52,7 +55,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .nav-menu {
@@ -63,14 +66,14 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-light);
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .hamburger {
@@ -82,7 +85,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     margin: 5px 0;
     transition: 0.3s;
 }
@@ -95,7 +98,7 @@ body {
     min-height: 80vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #003161 0%, #006A67 50%, #003161 100%);
     color: var(--white);
 }
 
@@ -118,8 +121,8 @@ body {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid var(--white);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 5px solid var(--accent-color);
+    box-shadow: 0 10px 30px rgba(0, 11, 88, 0.3);
 }
 
 .home-content h1 {
@@ -156,22 +159,22 @@ body {
 
 .btn-primary {
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--text-light);
 }
 
 .btn-primary:hover {
-    background-color: #e55a2b;
+    background-color: var(--tertiary-color);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 106, 103, 0.3);
 }
 
 .btn-secondary {
-    background-color: var(--white);
+    background-color: var(--accent-color);
     color: var(--primary-color);
 }
 
 .btn-secondary:hover {
-    background-color: var(--light-bg);
+    background-color: #F5D766;
     transform: translateY(-2px);
 }
 
@@ -199,7 +202,7 @@ body {
 .projects h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     text-align: center;
 }
 
@@ -212,7 +215,7 @@ body {
 .about-content h2 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--tertiary-color);
 }
 
 .about-content p {
@@ -227,7 +230,7 @@ body {
 }
 
 .skill-card {
-    background-color: var(--white);
+    background-color: var(--card-bg);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -253,11 +256,11 @@ body {
     content: "▸";
     position: absolute;
     left: 0;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .background {
-    background-color: var(--white);
+    background-color: var(--card-bg);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: var(--shadow);
@@ -286,7 +289,7 @@ body {
 }
 
 .project-card {
-    background-color: var(--white);
+    background-color: var(--card-bg);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: var(--shadow);
@@ -306,7 +309,7 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .project-image img {
@@ -320,12 +323,12 @@ body {
 }
 
 .project-content h3 {
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     margin-bottom: 0.5rem;
 }
 
 .project-content p {
-    color: #666;
+    color: var(--text-color);
     margin-bottom: 1rem;
     font-size: 0.95rem;
 }
@@ -339,7 +342,7 @@ body {
 
 .tag {
     background-color: var(--light-bg);
-    color: var(--primary-color);
+    color: var(--tertiary-color);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -348,7 +351,7 @@ body {
 .status-label {
     display: inline-block;
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--text-light);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.8rem;
@@ -359,8 +362,8 @@ body {
 
 .view-project-btn {
     display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--secondary-color);
+    color: var(--text-light);
     padding: 0.75rem 1.5rem;
     border-radius: 4px;
     font-weight: 600;
@@ -369,7 +372,7 @@ body {
 }
 
 .project-card:hover .view-project-btn {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
 
 /* ===========================
@@ -377,8 +380,8 @@ body {
    =========================== */
 
 .footer {
-    background-color: #222222;
-    color: var(--white);
+    background-color: var(--primary-color);
+    color: var(--text-light);
     padding: 2rem;
     text-align: center;
     margin-top: 4rem;
@@ -402,13 +405,13 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 50%;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon:hover {
-    background-color: var(--secondary-color);
+    background-color: var(--accent-color);
     transform: scale(1.1);
 }
 
@@ -423,7 +426,7 @@ body {
 }
 
 .footer a {
-    color: var(--secondary-color);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
