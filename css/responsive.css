@@ -3,8 +3,9 @@
    =========================== */
 
 @media (max-width: 768px) {
-    /* Navbar */
+    /* Navbar: hide default links on tablet/phone, show hamburger */
     .nav-menu {
+        display: none; /* hide full menu on small screens */
         gap: 1rem;
     }
 
@@ -12,6 +13,7 @@
         display: flex;
     }
 
+    /* When JS toggles the `active` class, show the menu as a stacked panel */
     .nav-menu.active {
         display: flex;
         position: absolute;
@@ -23,6 +25,7 @@
         padding: 1rem;
         gap: 1rem;
         box-shadow: var(--shadow);
+        z-index: 200;
     }
 
     /* Home Section */
