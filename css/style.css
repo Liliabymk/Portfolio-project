@@ -134,6 +134,7 @@ body {
     font-size: 1.1rem;
     margin-bottom: 2rem;
     line-height: 1.8;
+    color: #FDEB9E;
 }
 
 .cta-buttons {
@@ -195,7 +196,7 @@ body {
 .about h1 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: #F5AD18;
+    color: #003161;
     text-align: center;
 }
 

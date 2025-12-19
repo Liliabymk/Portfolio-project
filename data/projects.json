@@ -14,7 +14,6 @@
         "description": "Exciting project coming soon!",
         "fullDescription": "This project is currently in development. Check back soon for more details!",
         "icon": "🎨",
-        "tags": ["Coming Soon"],
         "status": "coming-soon",
         "videoUrl": ""
     },
@@ -24,7 +23,6 @@
         "description": "Another amazing project coming soon!",
         "fullDescription": "This project is in the planning stages. Stay tuned for updates!",
         "icon": "🚀",
-        "tags": ["Coming Soon"],
         "status": "coming-soon",
         "videoUrl": ""
     }
