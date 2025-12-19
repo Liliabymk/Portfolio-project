@@ -195,8 +195,8 @@
         <div class="project-detail-container">
             <a href="projects.html" class="back-btn">← Back to Projects</a>
             
-            <div id="projectImageContainer"></div>
             <h1 id="projectTitle">Loading...</h1>
+            <div id="projectImageContainer"></div>
             
             <div class="project-meta" id="projectMeta">
                 <!-- Project tags and status will be inserted here -->
@@ -204,7 +204,7 @@
 
             <!-- Video Section 1 -->
             <div class="video-container" id="videoSection">
-                <h2>Project Demo</h2>
+                <h2 id="videoTitle1">Project Demo</h2>
                 <div id="videoContent" class="no-video">
                     <p>No video available for this project yet.</p>
                 </div>
@@ -212,7 +212,7 @@
 
             <!-- Video Section 2 -->
             <div class="video-container" id="videoSection2" style="display: none;">
-                <h2>Additional Content</h2>
+                <h2 id="videoTitle2">Additional Content 1</h2>
                 <div id="videoContent2" class="no-video">
                     <p>No video available for this section yet.</p>
                 </div>
@@ -220,7 +220,7 @@
 
             <!-- Video Section 3 -->
             <div class="video-container" id="videoSection3" style="display: none;">
-                <h2>Additional Content</h2>
+                <h2 id="videoTitle3">Additional Content 2</h2>
                 <div id="videoContent3" class="no-video">
                     <p>No video available for this section yet.</p>
                 </div>
@@ -304,6 +304,9 @@
 
                 // Update video section
                 const videoContent = document.getElementById('videoContent');
+                const videoTitle1 = document.getElementById('videoTitle1');
+                // set heading from project data or fallback
+                if (videoTitle1) videoTitle1.textContent = project.videoTitle || 'Project Demo';
                 if (project.videoUrl && project.videoUrl.trim()) {
                     videoContent.innerHTML = `<div class="video-wrapper"><iframe src="${project.videoUrl}" allowfullscreen></iframe></div>`;
                 }
@@ -311,6 +314,8 @@
                 // Update video section 2
                 const videoSection2 = document.getElementById('videoSection2');
                 const videoContent2 = document.getElementById('videoContent2');
+                const videoTitle2 = document.getElementById('videoTitle2');
+                if (videoTitle2) videoTitle2.textContent = project.videoTitle2 || 'Additional Content 1';
                 if (project.videoUrl2 && project.videoUrl2.trim()) {
                     videoContent2.innerHTML = `<div class="video-wrapper"><iframe src="${project.videoUrl2}" allowfullscreen></iframe></div>`;
                     videoSection2.style.display = 'block';
@@ -321,6 +326,8 @@
                 // Update video section 3
                 const videoSection3 = document.getElementById('videoSection3');
                 const videoContent3 = document.getElementById('videoContent3');
+                const videoTitle3 = document.getElementById('videoTitle3');
+                if (videoTitle3) videoTitle3.textContent = project.videoTitle3 || 'Additional Content 2';
                 if (project.videoUrl3 && project.videoUrl3.trim()) {
                     videoContent3.innerHTML = `<div class="video-wrapper"><iframe src="${project.videoUrl3}" allowfullscreen></iframe></div>`;
                     videoSection3.style.display = 'block';

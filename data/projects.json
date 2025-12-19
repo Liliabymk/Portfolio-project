@@ -3,13 +3,16 @@
         "id": 1,
         "title": "Project One: How does hardware work?",
         "description": "In this project, my team and I constructed basic logic gates using transistors and other electronic components.",
-        "fullDescription": "In this project, my team and I constructed and tested three fundamental logic gates—NOT, AND, and OR—using a solderless breadboard and a kit of discrete components including PN2222 NPN transistors, various resistors, and pushbuttons. To understand the circuit design, we first did some research and watched explanatory videos. We then applied this knowledge to build the circuits sequentially, starting with the simpler NOT gate before assembling the more complex OR and AND gates, utilizing LEDs to visually verify the correct logic output for each configuration.",
+        "fullDescription": "In this project, my team and I, in collaboration with other teams in some parts, constructed and tested three fundamental logic gates—NOT, AND, OR, NAND, and XOR—using a solderless breadboard and a kit of discrete components including PN2222 NPN transistors, various resistors, and pushbuttons. To understand the circuit design, we first did some research and watched explanatory videos. We then applied this knowledge to build the circuits sequentially, starting with the simpler NOT gate before assembling the more complex OR, AND, NAND, and XOR gates, utilizing LEDs to visually verify the correct logic output for each configuration..",
         "cardImage": "assets/images/project1-card.jpg",
         "image": "assets/images/project1.jpg",
         "status": "completed",
         "videoUrl": "https://www.youtube.com/embed/E_j6BvmugZY",
+        "videoTitle": "NOT, AND, and OR Gates",
         "videoUrl2": "https://www.youtube.com/embed/K3gZlV5ObkE",
-        "videoUrl3": "https://www.youtube.com/embed/vKR5APSiiIE"
+        "videoTitle2": "NAND Gate",
+        "videoUrl3": "https://www.youtube.com/embed/vKR5APSiiIE",
+        "videoTitle3": "XOR Gate"
     },
     {
         "id": 2,
@@ -20,8 +23,11 @@
         "image": "assets/images/project2.jpg",
         "status": "completed",
         "videoUrl": "",
+        "videoTitle": "",
         "videoUrl2": "",
-        "videoUrl3": ""
+        "videoTitle2": "",
+        "videoUrl3": "",
+        "videoTitle3": ""
     },
     {
         "id": 3,
@@ -33,7 +39,10 @@
         "image": "assets/images/project3.jpg",
         "status": "coming-soon",
         "videoUrl": "",
+        "videoTitle": "",
         "videoUrl2": "",
-        "videoUrl3": ""
+        "videoTitle2": "",
+        "videoUrl3": "",
+        "videoTitle3": ""
     }
 ]
