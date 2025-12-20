@@ -89,8 +89,8 @@ async function loadProjectDetails() {
         // Update description
         document.getElementById('projectDescription').textContent = project.fullDescription;
 
-        // Show coming soon message if applicable
-        if (project.status === 'coming-soon') {
+        // Show coming soon message if applicable (but not for project 3)
+        if (project.status === 'coming-soon' && project.id != 3) {
             document.getElementById('comingSoonSection').style.display = 'block';
         }
     } catch (error) {
