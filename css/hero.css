@@ -1,0 +1,53 @@
+/**
+ * Hero Section / Home Styles
+ * Hero banner with profile photo and call-to-action
+ */
+
+.home {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #003161 0%, #006A67 50%, #003161 100%);
+    color: var(--white);
+}
+
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.profile-photo {
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--accent-color);
+    box-shadow: 0 10px 30px rgba(0, 11, 88, 0.3);
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    color: #FDEB9E;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}

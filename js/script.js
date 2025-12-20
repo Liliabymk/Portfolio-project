@@ -1,8 +1,13 @@
-// ===========================
-// MAIN JAVASCRIPT FILE
-// ===========================
+/**
+ * Main JavaScript File
+ * Handles project loading, card rendering, and scroll effects
+ * Only runs on projects.html
+ */
 
-// Load projects dynamically from JSON
+/**
+ * Fetch projects from JSON and render them as cards in the grid
+ * Gracefully skips if not on projects page
+ */
 async function loadProjects() {
     const projectsGrid = document.getElementById('projectsGrid');
     
@@ -24,6 +29,17 @@ async function loadProjects() {
     }
 }
 
+/**
+ * Create a single project card DOM element
+ * @param {Object} project - Project object from JSON
+ * @param {string} project.id - Unique project identifier
+ * @param {string} project.title - Project title
+ * @param {string} project.description - Short description
+ * @param {string} project.cardImage - Thumbnail image path
+ * @param {string} project.image - Fallback image path
+ * @param {string} project.status - "completed" or "coming-soon"
+ * @returns {HTMLElement} Clickable project card element
+ */
 function createProjectCard(project) {
     const card = document.createElement('div');
     card.className = 'project-card';
@@ -58,7 +74,7 @@ function createProjectCard(project) {
         </div>
     `;
     
-    // Make entire card clickable
+    // Make entire card clickable and navigate to project detail page
     card.addEventListener('click', function() {
         window.location.href = `project-detail.html?id=${project.id}`;
     });
@@ -72,7 +88,10 @@ document.addEventListener('DOMContentLoaded', function() {
     addScrollEffects();
 });
 
-// Add subtle scroll effects
+/**
+ * Add smooth fade-in and slide-up animation to project cards as they scroll into view
+ * Uses Intersection Observer for performance
+ */
 function addScrollEffects() {
     const observerOptions = {
         threshold: 0.1,

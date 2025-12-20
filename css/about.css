@@ -1,0 +1,83 @@
+/**
+ * About Section Styles
+ * Background text, skills grid, and skill cards
+ */
+
+.about {
+    padding: 4rem 2rem;
+    background-color: var(--light-bg);
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #003161;
+    text-align: center;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.about-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--tertiary-color);
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.skill-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.skill-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #4E56C0;
+}
+
+.skill-card li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+.background {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.background p {
+    color: #4E56C0;
+    font-size: 1rem;
+}

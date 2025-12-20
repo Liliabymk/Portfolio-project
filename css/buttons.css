@@ -1,0 +1,36 @@
+/**
+ * Button Styles
+ * Reusable button components for primary and secondary actions
+ */
+
+.btn {
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+.btn-primary:hover {
+    background-color: var(--tertiary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 106, 103, 0.3);
+}
+
+.btn-secondary {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: #F5D766;
+    transform: translateY(-2px);
+}
