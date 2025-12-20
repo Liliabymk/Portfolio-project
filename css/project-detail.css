@@ -146,6 +146,10 @@
     color: var(--text-color);
 }
 
+.hidden {
+    display: none !important;
+}
+
 @media (max-width: 768px) {
     .project-detail {
         padding: 2rem 1rem;

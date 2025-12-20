@@ -11,7 +11,7 @@
 async function loadProjects() {
     const projectsGrid = document.getElementById('projectsGrid');
     
-    if (!projectsGrid) return; // Not on projects page
+    if (!projectsGrid) return;
     
     try {
         const response = await fetch('data/projects.json');
@@ -45,13 +45,6 @@ function createProjectCard(project) {
     card.className = 'project-card';
     card.style.cursor = 'pointer';
     
-    let tagsHTML = '';
-    if (project.tags && project.tags.length > 0) {
-        tagsHTML = '<div class="project-tags">' +
-            project.tags.map(tag => `<span class="tag">${tag}</span>`).join('') +
-            '</div>';
-    }
-    
     let statusLabel = '';
     if (project.status === 'coming-soon') {
         statusLabel = '<div class="status-label">Coming Soon</div>';
@@ -69,12 +62,10 @@ function createProjectCard(project) {
             ${statusLabel}
             <h3>${project.title}</h3>
             <p>${project.description}</p>
-            ${tagsHTML}
             <div class="view-project-btn">View Project</div>
         </div>
     `;
     
-    // Make entire card clickable and navigate to project detail page
     card.addEventListener('click', function() {
         window.location.href = `project-detail.html?id=${project.id}`;
     });
@@ -87,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loadProjects();
     addScrollEffects();
 });
-
 /**
  * Add smooth fade-in and slide-up animation to project cards as they scroll into view
  * Uses Intersection Observer for performance
@@ -108,7 +98,6 @@ function addScrollEffects() {
         });
     }, observerOptions);
     
-    // Observe all project cards
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => {
         card.style.opacity = '0';

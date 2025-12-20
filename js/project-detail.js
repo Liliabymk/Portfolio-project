@@ -31,10 +31,8 @@ async function loadProjectDetails() {
             return;
         }
 
-        // Update title
         document.getElementById('projectTitle').textContent = project.title;
 
-        // Show project image if available
         const imgContainer = document.getElementById('projectImageContainer');
         if (project.image && project.image.trim()) {
             imgContainer.innerHTML = `<img src="${project.image}" alt="${project.title}">`;
@@ -44,17 +42,11 @@ async function loadProjectDetails() {
 
         // Update meta (tags and status)
         let metaHTML = '';
-        if (project.tags && project.tags.length > 0) {
-            metaHTML += '<div class="project-meta">' +
-                project.tags.map(tag => `<span class="tag">${tag}</span>`).join('') +
-                '</div>';
-        }
         if (project.status === 'coming-soon') {
             metaHTML += '<div class="project-status">Coming Soon</div>';
         }
         document.getElementById('projectMeta').innerHTML = metaHTML;
 
-        // Update video section 1
         const videoContent = document.getElementById('videoContent');
         const videoTitle1 = document.getElementById('videoTitle1');
         if (videoTitle1) videoTitle1.textContent = project.videoTitle || 'Project Demo';
@@ -69,9 +61,9 @@ async function loadProjectDetails() {
         if (videoTitle2) videoTitle2.textContent = project.videoTitle2 || 'Additional Content 1';
         if (project.videoUrl2 && project.videoUrl2.trim()) {
             videoContent2.innerHTML = `<div class="video-wrapper"><iframe src="${project.videoUrl2}" allowfullscreen></iframe></div>`;
-            videoSection2.style.display = 'block';
+            videoSection2.classList.remove('hidden');
         } else {
-            videoSection2.style.display = 'none';
+            videoSection2.classList.add('hidden');
         }
 
         // Update video section 3
@@ -81,18 +73,13 @@ async function loadProjectDetails() {
         if (videoTitle3) videoTitle3.textContent = project.videoTitle3 || 'Additional Content 2';
         if (project.videoUrl3 && project.videoUrl3.trim()) {
             videoContent3.innerHTML = `<div class="video-wrapper"><iframe src="${project.videoUrl3}" allowfullscreen></iframe></div>`;
-            videoSection3.style.display = 'block';
+            videoSection3.classList.remove('hidden');
         } else {
-            videoSection3.style.display = 'none';
+            videoSection3.classList.add('hidden');
         }
 
         // Update description
         document.getElementById('projectDescription').textContent = project.fullDescription;
-
-        // Show coming soon message if applicable (but not for project 3)
-        if (project.status === 'coming-soon' && project.id != 3) {
-            document.getElementById('comingSoonSection').style.display = 'block';
-        }
     } catch (error) {
         console.error('Error loading project details:', error);
         document.querySelector('.project-detail-container').innerHTML = '<p>Error loading project details.</p>';

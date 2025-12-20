@@ -8,14 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('navMenu');
 
-    // Toggle mobile menu on hamburger click
     if (hamburger) {
         hamburger.addEventListener('click', function() {
             navMenu.classList.toggle('active');
         });
     }
 
-    // Close menu when a navigation link is clicked
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
@@ -23,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Highlight active page link on page load
     updateActiveLink();
 });
 
