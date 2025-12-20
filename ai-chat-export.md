@@ -2563,3 +2563,5 @@ What I can do now (pick one)
 - C — Keep block but remove JS toggle so it's permanently hidden (keeps markup but disables feature).
 
 Which option do you want me to apply?
+Note: I did not answer the last question.
+End
