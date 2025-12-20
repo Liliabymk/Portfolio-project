@@ -1,0 +1,169 @@
+/**
+ * Project Detail Page Styles
+ * Specific styling for project detail pages including layout,
+ * images, video containers, and responsive adjustments
+ */
+
+.project-detail {
+    padding: 4rem 2rem;
+    min-height: 80vh;
+}
+
+.project-detail-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: var(--tertiary-color);
+}
+
+.project-detail h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-meta .tag {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+}
+
+.project-status {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.video-container {
+    margin: 3rem 0;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.video-container h2 {
+    color: var(--tertiary-color);
+    margin-bottom: 1rem;
+}
+
+/* Large project image shown on detail page */
+#projectImageContainer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 1.5rem auto;
+    text-align: center;
+}
+
+#projectImageContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    object-fit: cover;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.no-video {
+    background-color: var(--light-bg);
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-color);
+    border-radius: 8px;
+}
+
+.description {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    line-height: 1.8;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.description h2 {
+    color: var(--tertiary-color);
+    margin-bottom: 1rem;
+}
+
+#projectDescription {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.coming-soon-message {
+    background-color: #FFF9E6;
+    border-left: 4px solid var(--secondary-color);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin: 2rem 0;
+}
+
+.coming-soon-message h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.coming-soon-message p {
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .project-detail {
+        padding: 2rem 1rem;
+    }
+
+    .project-detail h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-meta {
+        gap: 0.5rem;
+    }
+
+    .video-container {
+        padding: 1rem;
+    }
+
+    .description {
+        padding: 1rem;
+    }
+}

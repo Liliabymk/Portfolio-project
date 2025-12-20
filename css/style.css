@@ -5,14 +5,15 @@
  * Each component is responsible for a specific part of the design.
  * 
  * Import Order:
- * 1. base.css        - Global reset, variables, and common styles
- * 2. navbar.css      - Navigation bar and mobile menu
- * 3. hero.css        - Home page hero section
- * 4. buttons.css     - Reusable button components
- * 5. cards.css       - Project cards and grid
- * 6. about.css       - About page and skills
- * 7. footer.css      - Footer bar and social links
- * 8. responsive.css  - Mobile/tablet media queries
+ * 1. base.css           - Global reset, variables, and common styles
+ * 2. navbar.css         - Navigation bar and mobile menu
+ * 3. hero.css           - Home page hero section
+ * 4. buttons.css        - Reusable button components
+ * 5. cards.css          - Project cards and grid
+ * 6. about.css          - About page and skills
+ * 7. footer.css         - Footer bar and social links
+ * 8. project-detail.css - Project detail page styles
+ * 9. responsive.css     - Mobile/tablet media queries
  */
 
 @import url('base.css');
@@ -22,4 +23,5 @@
 @import url('cards.css');
 @import url('about.css');
 @import url('footer.css');
+@import url('project-detail.css');
 @import url('responsive.css');
